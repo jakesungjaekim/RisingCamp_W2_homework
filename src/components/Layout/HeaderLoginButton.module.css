@@ -1,0 +1,26 @@
+/* NeflixSans-Regular 글꼴 적용 */
+@font-face {
+  src: url(../../assets/fonts/NetflixSans-Regular.otf);
+  font-family: NeflixSans-Regular;
+}
+
+.button {
+  cursor: pointer;
+
+  font: inherit;
+  background-color: #e50914;
+
+  line-height: normal;
+
+  color: white;
+  text-decoration: none;
+  padding: 7px 17px;
+  font-weight: 400px;
+
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  /* 내가 추가 해보고 싶어서 넣은 것 */
+  /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); */
+}

@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 60px;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+
+  background-color: #8a2b06;
+
+  /* z-index: 2; */
+}
+
+.header-image {
+  width: 167px;
+}
+
+.header-side {
+  display: flex;
+}
