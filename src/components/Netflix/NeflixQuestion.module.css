@@ -1,0 +1,60 @@
+.question {
+  background-color: black;
+  color: white;
+  border-bottom: 8px solid #222;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 70px 45px;
+}
+
+.question form div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.question form h2 {
+  font-size: 50px;
+  margin: 0 0 8px 0;
+  text-align: center;
+  color: white;
+}
+
+.question form p {
+  text-align: center;
+}
+
+.onemoretime {
+  display: flex;
+  flex-direction: column;
+}
+
+.onemoretime div input {
+  box-sizing: border-box;
+  border: 1px solid #8c8c8c;
+  padding: 10px 10px 0;
+  font-size: 16px;
+  width: 500px;
+  height: 70px;
+}
+
+.onemoretime div button {
+  box-sizing: border-box;
+  border: none;
+  border: 1px soild #8c8c8c;
+  background-color: #e50914;
+  color: white;
+  width: 200px;
+  height: 70px;
+
+  font-size: 32px;
+  font-weight: 200;
+  padding: 15px;
+}
+
+.onemoretime button:hover {
+  background-color: #fb333d;
+}
