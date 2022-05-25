@@ -2,11 +2,11 @@ import React from "react";
 import { Fragment } from "react";
 
 //import img
-import netflixImg from "../../assets/header-logo.png";
+import netflixImg from "../../assets/images/header-logo.png";
 // import module.css
 import classes from "./Header.module.css";
-import HeaderLangOption from "./HeaderLangOption";
 // import components css
+import HeaderLangOption from "./HeaderLangOption";
 import HeaderLoginButton from "./HeaderLoginButton";
 
 const Header = (props) => {

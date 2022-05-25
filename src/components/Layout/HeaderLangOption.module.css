@@ -1,6 +1,7 @@
 .header-select {
-  color: white;
   display: flex;
+
+  color: white;
 }
 
 .header-select i {

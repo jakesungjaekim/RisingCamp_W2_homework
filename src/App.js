@@ -2,14 +2,16 @@ import React from "react";
 import { Fragment } from "react";
 
 import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
+import NeflixStart from "./components/Netflix/NeflixStart";
 
 function App() {
   return (
-    <div className="App">
-      <Fragment>
-        <Header />
-      </Fragment>
-    </div>
+    <Fragment>
+      <Header />
+      <NeflixStart />
+      <Footer />
+    </Fragment>
   );
 }
 

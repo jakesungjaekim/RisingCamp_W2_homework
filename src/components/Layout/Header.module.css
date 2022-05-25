@@ -5,15 +5,12 @@
   width: 100%;
   padding: 15px 60px;
 
-  position: absolute;
-
   top: 0;
   left: 0;
   box-sizing: border-box;
 
-  background-color: #8a2b06;
-
-  /* z-index: 2; */
+  position: absolute;
+  z-index: 2;
 }
 
 .header-image {
