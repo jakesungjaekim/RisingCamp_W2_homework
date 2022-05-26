@@ -7,10 +7,15 @@ const NetflixLoginModal = (props) => {
   return (
     <div className={classes["login-box"]}>
       <h2>로그인</h2>
-      <form>
+
+      <form className={classes.login}>
+        {/* 여기를 이제 input component를 만들어서 값을 넘겨받을 수 있도록 설정해야함 */}
+
         <input placeholder="이메일 주소 또는 전화번호" />
         <input placeholder="비밀번호" />
+
         <button>로그인</button>
+
         <div className={classes["checkbox-wrap"]}>
           <input
             type="checkbox"

@@ -24,10 +24,11 @@
   padding: 30px 68px;
 }
 
-form input {
+.login input {
   margin-bottom: 10px;
   box-sizing: border-box;
   border: none;
+
   border-radius: 8px;
 
   background-color: #333;
@@ -40,7 +41,7 @@ form input {
   color: white;
 }
 
-form button {
+.login button {
   margin-top: 20px;
   box-sizing: border-box;
 
@@ -84,7 +85,7 @@ form h4 {
   margin-bottom: 10px;
 }
 
-form p {
+.login p {
   color: #757575;
   font-size: 13px;
 }
