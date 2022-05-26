@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.item h2 {
+  font-size: 40px;
+  margin: 0 0 8px 0;
+}
+
+.item p {
+  font-size: 26px;
+}
+
+.text {
+  width: 550px;
+}

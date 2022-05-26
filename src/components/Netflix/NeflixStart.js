@@ -1,5 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
+
+import NetflixMain from "./NetflixMain";
 import NeflixQuestion from "./NeflixQuestion";
 
 import classes from "./NetflixStart.module.css";
@@ -23,6 +25,7 @@ const NeflixStart = (props) => {
           </form>
         </div>
       </main>
+      <NetflixMain />
       <NeflixQuestion />
     </Fragment>
   );
