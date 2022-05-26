@@ -12,6 +12,11 @@
   font-size: 26px;
 }
 
+.item img {
+  width: 530px;
+}
+
 .text {
-  width: 550px;
+  width: 500px;
+  padding: 70px 0 0 0;
 }
