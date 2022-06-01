@@ -3,6 +3,8 @@ import { Fragment } from "react";
 
 import classes from "./NetflixLoginModal.module.css";
 
+import { Link } from "react-router-dom";
+
 const NetflixLoginModal = (props) => {
   return (
     <div className={classes["login-box"]}>
@@ -13,8 +15,9 @@ const NetflixLoginModal = (props) => {
 
         <input placeholder="이메일 주소 또는 전화번호" />
         <input placeholder="비밀번호" />
-
-        <button>로그인</button>
+        <Link to="/profile">
+          <button>로그인</button>
+        </Link>
 
         <div className={classes["checkbox-wrap"]}>
           <input

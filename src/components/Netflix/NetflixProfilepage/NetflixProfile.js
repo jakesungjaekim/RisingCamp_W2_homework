@@ -11,6 +11,9 @@ import profileImg4 from "../../../assets/images/profile-images4.png";
 import profileImg5 from "../../../assets/images/profile-images5.png";
 import NetflixProfileChoice from "./NeflixProfileChoice";
 
+import Home from "../../pages/Home";
+import { Link } from "react-router-dom";
+
 const DUMMY_PROFILES = [
   { id: "1", user: "USER1", image: profileImg1 },
   { id: "2", user: "USER2", image: profileImg2 },
@@ -33,7 +36,9 @@ const NetflixProfile = (props) => {
   return (
     <Fragment className={classes["profile-wrap"]}>
       <div className={classes["profile-logo"]}>
-        <img src={netflixImg} />
+        <Link to="/">
+          <img src={netflixImg} />
+        </Link>
       </div>
       <div className={classes["profile-main"]}>
         <h2>넷플릭스를 시청할 프로필을 선택하세요.</h2>
