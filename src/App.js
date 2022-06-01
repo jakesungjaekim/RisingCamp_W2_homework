@@ -1,33 +1,18 @@
 import React from "react";
-import { Fragment } from "react";
 
-import { Link, Route, Switch } from "react-router-dom";
+import { Routes, Link, Route } from "react-router-dom";
 
-import Header from "./components/Layout/Header";
-import Footer from "./components/Layout/Footer";
-import NeflixStart from "./components/Netflix/NeflixStart";
-import NetflixLogin from "./components/Netflix/NetflixLoginPage/NetflixLogin";
-import NetflixProfile from "./components/Netflix/NetflixProfilepage/NetflixProfile";
+import Home from "./components/pages/Home";
+import Login from "./components/pages/Login";
+import Profile from "./components/pages/Profile";
 
 function App() {
   return (
-    <Fragment>
-      <Switch>
-        <Route exact path="/">
-          <Header />
-          <NeflixStart />
-          <Footer />
-        </Route>
-
-        <Route exact path="/login">
-          <NetflixLogin />
-        </Route>
-
-        <Route exact path="/profile">
-          <NetflixProfile />
-        </Route>
-      </Switch>
-    </Fragment>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/profile" element={<Profile />} />
+    </Routes>
   );
 }
 
