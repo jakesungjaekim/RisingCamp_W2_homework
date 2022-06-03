@@ -1,0 +1,27 @@
+.button {
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+
+  background: #4f005f;
+  color: white;
+  padding: 11px 34px 11px 29px;
+
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button:hover,
+.button:active {
+  background: #741188;
+  border-color: #741188;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}

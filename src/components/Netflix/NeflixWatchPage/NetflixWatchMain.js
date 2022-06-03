@@ -1,10 +1,41 @@
 import { Fragment } from "react";
+import { useState } from "react";
 
 import classes from "./NetflixWatchMain.module.css";
 
+import Button from "../../UI/Button";
+import InfoModal from "../../UI/InfoModal";
+
 const NetflixWatchMain = (props) => {
+  const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
+  const [info, setInfo] = useState();
+
+  const btnclasses = `${classes.button} ${
+    btnIsHighlighted ? classes.bump : ""
+  }`;
+
+  const showInfoHandler = (event) => {
+    // event.preventDefault();
+
+    setInfo({
+      title: "ReadyPlayerone",
+      message: "This is awesome Movie",
+    });
+  };
+
+  const infoHandler = () => {
+    setInfo(null);
+  };
+
   return (
     <Fragment>
+      {info && (
+        <InfoModal
+          title={info.title}
+          message={info.message}
+          onClick={infoHandler}
+        />
+      )}
       <div className={classes["watch-main"]}>
         <div className={classes["watch-main-text"]}>
           <img
@@ -16,6 +47,14 @@ const NetflixWatchMain = (props) => {
             <br /> 소유권을 얻기 위한 도전에 앞장선다. 모두의 꿈과 희망을 지키기
             위해!
           </p>
+        </div>
+        <div className={classes["button-wrap"]}>
+          <Button className={btnclasses}>
+            <i class="fa-solid fa-play"></i> 재생
+          </Button>
+          <Button onClick={showInfoHandler} type="submit">
+            <i class="fa-solid fa-circle-info"></i> 상세 정보
+          </Button>
         </div>
       </div>
     </Fragment>
