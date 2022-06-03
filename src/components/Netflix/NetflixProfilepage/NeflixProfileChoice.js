@@ -4,15 +4,21 @@ import { Fragment } from "react";
 import classes from "./NetflixProfileChoice.module.css";
 
 import InsideMain from "../../pages/InsideMain";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NetflixProfileChoice = (props) => {
+  const navigate = useNavigate();
+
   return (
     <Fragment>
       <div className={classes["choice-wrap"]}>
-        <Link to="/inside">
+        <div
+          onClick={() => {
+            navigate("/watch");
+          }}
+        >
           <img src={props.image} />
-        </Link>
+        </div>
         <p>{props.user}</p>
       </div>
     </Fragment>

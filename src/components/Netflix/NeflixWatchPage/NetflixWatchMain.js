@@ -36,6 +36,9 @@ const NetflixWatchMain = (props) => {
           onClick={infoHandler}
         />
       )}
+
+      {/* <InfoModal title="error" message="something wrong" /> */}
+
       <div className={classes["watch-main"]}>
         <div className={classes["watch-main-text"]}>
           <img
@@ -52,7 +55,7 @@ const NetflixWatchMain = (props) => {
           <Button className={btnclasses}>
             <i class="fa-solid fa-play"></i> 재생
           </Button>
-          <Button onClick={showInfoHandler} type="submit">
+          <Button type="submit" onClick={showInfoHandler}>
             <i class="fa-solid fa-circle-info"></i> 상세 정보
           </Button>
         </div>
